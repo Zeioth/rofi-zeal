@@ -4,8 +4,9 @@
 files=/var/tmp/rofi-zeal_term_list
 
 append_new_term() {
-	# append only if doesn't exist
-	grep -q "$input" "$files" || sed  -i "1i $input" "$files"
+	# Delete term. Append on the first line.
+	sed -i "/$input/d" $files
+	sed -i "1i $input" "$files"
 	# If file is bigger than 5MB, reset the log
 	if [ $(find "$files" -type f -size +5000000c 2>/dev/null) ]; then
 	  echo "" > "$files"
@@ -27,14 +28,34 @@ fi
 
 case "$(echo $input | cut -d " " -f 1)" in
 m)
+	# search on man
   append_new_term
   mantoread=$(echo "$input" | cut -c 2- | xargs)
   exec xfce4-terminal -e "man $mantoread"
   ;;
 man)
+	# Search on man
 	append_new_term
   mantoread=$(echo "$input" | cut -c 4- | xargs)
   exec xfce4-terminal -e "man $mantoread"
+  ;;
+d)
+	# Search on DuckDuckGo
+	append_new_term
+  mantoread=$(echo "$input" | cut -c 2- | xargs)
+  exec $BROWSER "https://duckduckgo.com/?q=$(echo $input | cut -d " " -f2-)" &> /dev/null &
+  ;;
+d)
+	# Search on Google
+	append_new_term
+  mantoread=$(echo "$input" | cut -c 2- | xargs)
+  exec $BROWSER "https://www.google.com/search?q=$(echo $input | cut -d " " -f2-)" &> /dev/null &
+  ;;
+s)
+	# Search on stack overflow
+	append_new_term
+  mantoread=$(echo "$input" | cut -c 2- | xargs)
+  exec $BROWSER "https://stackoverflow.com/search?q=$(echo $input | cut -d " " -f2-)" &> /dev/null &
   ;;
 *)
   # Open zeal only if there's text input
