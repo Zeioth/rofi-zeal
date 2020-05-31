@@ -54,7 +54,7 @@ s)
 med)
 	# Search on Medium
 	append_new_term
-  mantoread=$(echo "$input" | cut -c 2- | xargs)
+  mantoread=$(echo "$input" | cut -c 4- | xargs)
   exec $BROWSER "https://medium.com/search?q=$(echo $input | cut -d " " -f4-)" &> /dev/null &
   ;;
 *)
