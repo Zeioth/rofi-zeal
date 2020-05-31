@@ -6,6 +6,7 @@ Dependencies
 
   * rofi
   * zeal, or zeal-git
+  * xfce4-terminal
 
 How to use
 ==========
