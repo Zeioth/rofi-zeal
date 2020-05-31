@@ -19,8 +19,8 @@ Just attach the script to a keyboard shortcut.
 
 **Then use it to search like:**
 
-term   # Search on Zeal
-m term # Search on Man
-s term # Search on Stack Overflow
-d term # Search on DuckDuckGo
-g term # Search on Google
+* term   # Search on Zeal
+* m term # Search on Man
+* s term # Search on Stack Overflow
+* d term # Search on DuckDuckGo
+* g term # Search on Google
