@@ -21,6 +21,8 @@ Just attach the script to a keyboard shortcut.
 
     term   # Search on Zeal
     m term # Search on Man
+    
+    # Extra features
     s term # Search on Stack Overflow
     d term # Search on DuckDuckGo
     g term # Search on Google
