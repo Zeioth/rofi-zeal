@@ -58,7 +58,7 @@ med)
   exec $BROWSER "https://medium.com/search?q=$mantoread" &> /dev/null &
   ;;
 dd)
-	# Search on Devdocs.io
+	# Search on DevDocs
 	append_new_term
   mantoread=$(echo "$input" | cut -c 3- | xargs)
   exec $BROWSER "https://devdocs.io/search?q=$mantoread" &> /dev/null &
