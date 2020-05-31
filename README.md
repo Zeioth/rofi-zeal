@@ -6,7 +6,6 @@ Dependencies
 
   * rofi
   * zeal, or zeal-git
-  * 
 
 How to use
 ==========
