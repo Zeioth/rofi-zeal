@@ -27,12 +27,6 @@ if [ -e $files ]; then
 fi
 
 case "$(echo $input | cut -d " " -f 1)" in
-m)
-	# search on man
-  append_new_term
-  mantoread=$(echo "$input" | cut -c 2- | xargs)
-  exec xfce4-terminal -e "man $mantoread"
-  ;;
 man)
 	# Search on man
 	append_new_term
@@ -57,11 +51,11 @@ s)
   mantoread=$(echo "$input" | cut -c 2- | xargs)
   exec $BROWSER "https://stackoverflow.com/search?q=$(echo $input | cut -d " " -f2-)" &> /dev/null &
   ;;
-m)
+med)
 	# Search on Medium
 	append_new_term
   mantoread=$(echo "$input" | cut -c 2- | xargs)
-  exec $BROWSER "https://medium.com/search?q=$(echo $input | cut -d " " -f2-)" &> /dev/null &
+  exec $BROWSER "https://medium.com/search?q=$(echo $input | cut -d " " -f4-)" &> /dev/null &
   ;;
 *)
   # Open zeal only if there's text input
