@@ -1,7 +1,7 @@
 #!/bin/bash
 # A quick documentation file-finder based on rofi and zeal
 # Requires: rofi, zeal, xfce4-terminal nerdfonts
-files=/tmp/.zealutous_file_list
+files=/var/tmp/rofi-zeal_term_list
 
 append_new_term() {
 	# append only if doesn't exist
@@ -13,11 +13,16 @@ append_new_term() {
 }
 
 if [ -e $files ]; then
-	# File list exist, use it
+	# If file list exist, use it
 	input=$(cat $files | rofi -dmenu -p "manual")
 	else
 	# There is no file list, create it and show menu only after that
 	input=$(cat $files | rofi -dmenu -p "manual")
+  #	The file if empty, initialize it, so we can insert on the top later
+  if [ ! -s "$_file" ]
+  then
+    echo " " > "$files"
+  fi
 fi
 
 case "$(echo $input | cut -d " " -f 1)" in
