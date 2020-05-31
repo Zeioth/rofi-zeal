@@ -37,25 +37,25 @@ d)
 	# Search on DuckDuckGo
 	append_new_term
   mantoread=$(echo "$input" | cut -c 2- | xargs)
-  exec $BROWSER "https://duckduckgo.com/?q=$(echo $input | cut -d " " -f2-)" &> /dev/null &
+  exec $BROWSER "https://duckduckgo.com/?q=$mantoread" &> /dev/null &
   ;;
 g)
 	# Search on Google
 	append_new_term
   mantoread=$(echo "$input" | cut -c 2- | xargs)
-  exec $BROWSER "https://www.google.com/search?q=$(echo $input | cut -d " " -f2-)" &> /dev/null &
+  exec $BROWSER "https://www.google.com/search?q=$mantoread" &> /dev/null &
   ;;
 s)
 	# Search on stack overflow
 	append_new_term
   mantoread=$(echo "$input" | cut -c 2- | xargs)
-  exec $BROWSER "https://stackoverflow.com/search?q=$(echo $input | cut -d " " -f2-)" &> /dev/null &
+  exec $BROWSER "https://stackoverflow.com/search?q=$mantoread" &> /dev/null &
   ;;
 med)
 	# Search on Medium
 	append_new_term
   mantoread=$(echo "$input" | cut -c 4- | xargs)
-  exec $BROWSER "https://medium.com/search?q=$(echo $input | cut -d " " -f4-)" &> /dev/null &
+  exec $BROWSER "https://medium.com/search?q=$mantoread" &> /dev/null &
   ;;
 *)
   # Open zeal only if there's text input
