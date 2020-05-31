@@ -45,7 +45,7 @@ d)
   mantoread=$(echo "$input" | cut -c 2- | xargs)
   exec $BROWSER "https://duckduckgo.com/?q=$(echo $input | cut -d " " -f2-)" &> /dev/null &
   ;;
-d)
+g)
 	# Search on Google
 	append_new_term
   mantoread=$(echo "$input" | cut -c 2- | xargs)
@@ -56,6 +56,12 @@ s)
 	append_new_term
   mantoread=$(echo "$input" | cut -c 2- | xargs)
   exec $BROWSER "https://stackoverflow.com/search?q=$(echo $input | cut -d " " -f2-)" &> /dev/null &
+  ;;
+m)
+	# Search on Medium
+	append_new_term
+  mantoread=$(echo "$input" | cut -c 2- | xargs)
+  exec $BROWSER "https://medium.com/search?q=$(echo $input | cut -d " " -f2-)" &> /dev/null &
   ;;
 *)
   # Open zeal only if there's text input
