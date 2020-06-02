@@ -22,8 +22,10 @@ Just attach the script to a keyboard shortcut.
     term     # Search on Zeal
     man term # Search on Man
     
-    s term   # Search on Stack Overflow
-    d term   # Search on DuckDuckGo
-    g term   # Search on Google
-    med term # Search on Medium
     dd term  # Search on DevDocs
+    s term   # Search on Stack Overflow
+    med term # Search on Medium
+    
+    g term   # Search on Google
+    d term   # Search on DuckDuckGo
+    
