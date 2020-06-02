@@ -20,12 +20,11 @@ Just attach the script to a keyboard shortcut.
 **Then use it to search like:**
 
     term     # Search on Zeal
+    dd term  # Search on DevDocs
     man term # Search on Man
     
-    dd term  # Search on DevDocs
     s term   # Search on Stack Overflow
     med term # Search on Medium
-    
     g term   # Search on Google
     d term   # Search on DuckDuckGo
     
