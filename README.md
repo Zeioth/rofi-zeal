@@ -19,10 +19,10 @@ Just attach the script to a keyboard shortcut.
 
 **Then use it to search like:**
 
-    term     # Search on Zeal (Also 'language:term')
+    term     # Search on Zeal
     man term # Search on Man
     
-    dd term  # Search on DevDocs (Also 'language term')
+    dd term  # Search on DevDocs
     s term   # Search on Stack Overflow
     med term # Search on Medium
     
