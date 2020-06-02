@@ -26,3 +26,4 @@ Just attach the script to a keyboard shortcut.
     d term   # Search on DuckDuckGo
     g term   # Search on Google
     med term # Search on Medium
+    dd term  # Search on DevDocs
