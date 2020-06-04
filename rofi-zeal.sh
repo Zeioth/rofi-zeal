@@ -31,7 +31,7 @@ man)
 	# Search on man
 	append_new_term
   mantoread=$(echo "$input" | cut -c 4- | xargs)
-  exec xfce4-terminal -e "man $mantoread"
+  exec i3-sensible-terminal -e "man $mantoread"
   ;;
 d)
 	# Search on DuckDuckGo
