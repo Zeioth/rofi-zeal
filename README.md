@@ -19,9 +19,9 @@ Just attach the script to a keyboard shortcut.
 
 **Then use it to search like:**
 
-    term     # Search on Zeal
-    dd term  # Search on DevDocs
-    man term # Search on Man
+    language:term     # Search on Zeal
+    dd language term  # Search on DevDocs
+    man term          # Search on Man
     
     s term   # Search on Stack Overflow
     med term # Search on Medium
