@@ -1,6 +1,6 @@
 #!/bin/bash
 # A quick documentation file-finder based on rofi and zeal
-# Requires: rofi, zeal, xfce4-terminal nerdfonts
+# Requires: rofi, zeal, i3-sensible-terminal nerdfonts
 files=/var/tmp/rofi-zeal_term_list
 
 append_new_term() {
