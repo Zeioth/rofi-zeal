@@ -23,8 +23,8 @@ Just attach the script to a keyboard shortcut.
     dd language term  # Search on DevDocs
     man term          # Search on Man
     
-    s term   # Search on Stack Overflow
-    med term # Search on Medium
-    g term   # Search on Google
-    d term   # Search on DuckDuckGo
+    s term            # Search on Stack Overflow
+    med term          # Search on Medium
+    g term            # Search on Google
+    d term            # Search on DuckDuckGo
     
