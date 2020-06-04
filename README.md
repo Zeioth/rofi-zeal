@@ -15,7 +15,7 @@ Just attach the script to a keyboard shortcut.
 **Example for I3WM**
 
     cp ./rofi-zeal ~/.local/share/rofi
-    bindsym $mod+Ctrl+d exec /home/zeioth/.local/share/rofi/rofi-zeal.sh
+    bindsym $mod+Ctrl+d exec ~/.local/share/rofi/rofi-zeal.sh TERMINAL=xfce4-terminal
 
 **Then use it to search like:**
 
