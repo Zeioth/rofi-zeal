@@ -21,8 +21,8 @@ Just attach the script to a keyboard shortcut.
 
     # Install
     mkdir -p ~/.local/share/rofi/rofi-zeal/
-	  cp "${srcdir}"/rofi-zeal/rofi-zeal.sh ~/.local/share/rofi/rofi-zeal/rofi-zeal.sh
-	  chmod u+x ~/.local/share/rofi/rofi-zeal/rofi-zeal.sh
+    cp "${srcdir}"/rofi-zeal/rofi-zeal.sh ~/.local/share/rofi/rofi-zeal/rofi-zeal.sh
+    chmod u+x ~/.local/share/rofi/rofi-zeal/rofi-zeal.sh
     ln -sf ~/.local/share/rofi/rofi-zeal/rofi-zeal.sh ~/.local/bin/rofi-zeal
 
     # Then run rofi-zeal
