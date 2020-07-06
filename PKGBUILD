@@ -5,7 +5,7 @@
 
 # Maintainer: Adrian Lopez <zeioth@hotmail.com>
 pkgname=rofi-zeal-git
-pkgver=1.0.r44.19571d0
+pkgver=1.0.r44.b6f0de8
 pkgrel=1
 epoch=
 pkgdesc="Search code documentation from rofi"

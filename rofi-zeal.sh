@@ -7,10 +7,8 @@ append_new_term() {
 	# Delete term. Append on the first line.
 	sed -i "/$input/d" $files
 	sed -i "1i $input" "$files"
-	# If file is bigger than 5MB, reset the log
-	if [ $(find "$files" -type f -size +5000000c 2>/dev/null) ]; then
-	  echo "" > "$files"
-	fi
+	# Max cache limited to 20 entries: https://github.com/Zeioth/rofi-zeal/issues/3
+	sed -i 20d "$files"
 }
 
 if [ -e $files ]; then
