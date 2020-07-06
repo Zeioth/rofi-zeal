@@ -1,7 +1,7 @@
 #!/bin/bash
 # A quick documentation file-finder based on rofi and zeal
 # Requires: rofi, zeal, i3-sensible-terminal nerdfonts
-files=/var/tmp/rofi-zeal_term_list
+files=~/.cache/rofi/rofi-zeal/rofi-zeal_term_list
 
 append_new_term() {
 	# Delete term. Append on the first line.
