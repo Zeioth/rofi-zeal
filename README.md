@@ -1,6 +1,10 @@
 # rofi-zeal
 Use rofi to search documentation on Zeal and Man.
 
+![zeal](https://user-images.githubusercontent.com/3357792/218284465-55bc4bbd-cb48-433a-8892-836783cf32b7.png)
+![zeal2](https://user-images.githubusercontent.com/3357792/218284485-4ea7d585-c067-4943-b891-52b9df0d61ab.png)
+
+
 Dependencies
 ==========
 
