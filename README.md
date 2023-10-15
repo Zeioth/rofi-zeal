@@ -49,7 +49,7 @@ Just attach the script to a keyboard shortcut.
 ## Troubleshooting
 
 * **I'd like to change the terminal when I use man:** Define the env var `TERMINAL` with the one you like.
-* **I'd like to pass my own rofi config**: Define the env var `ROFI_CONFIG_FILE`.
+* **I'd like to pass my own rofi config**: Define the env var `ROFI_CONFIG_FILE` with the one you like..
 
 ## Contribute to the project
 I don't use rofi myself anymore but I will review and merge pull requests, so please send your PR if you would like to include a new feature.
