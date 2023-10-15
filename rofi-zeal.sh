@@ -1,5 +1,5 @@
 #!/bin/bash
-# A quick documentation file-finder based on rofi and zeal
+# A quick documentation finder based on rofi and zeal.
 # Requires: rofi, zeal, i3-sensible-terminal nerdfonts
 
 
