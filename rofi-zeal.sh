@@ -1,6 +1,6 @@
 #!/bin/bash
 # A quick documentation finder based on rofi and zeal.
-# Requires: rofi, zeal, i3-sensible-terminal nerdfonts
+# Requires: rofi, zeal, i3-sensible-terminal
 
 
 # ROFI
@@ -39,7 +39,7 @@ dd) # DevDocs
   # Open zeal only if there's text input
   if [ -n "$input" ]
   then
-    exec zeal "$input" "$(echo "$input" | sed 's/^....//g')" & # Open zeal
+    exec zeal "$input" "$(echo "$input" | sed 's/^....//g')" &
   fi
   ;;
 esac
