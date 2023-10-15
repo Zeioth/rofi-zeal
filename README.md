@@ -55,4 +55,4 @@ Just attach the script to a keyboard shortcut.
 I'm don't use rofi myself anymore but I will review and merge pull requests, so please send your PR if you would like to include a new feature.
 
 ## Wanted features
-* Search history → [Taking care terms don't overlap](https://github.com/Zeioth/rofi-zeal/issues/3)
+* Search history → [take care terms don't overlap](https://github.com/Zeioth/rofi-zeal/issues/3)
