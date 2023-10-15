@@ -25,7 +25,6 @@ Just attach the script to a keyboard shortcut.
 
     # Install
     mkdir -p ~/.local/share/rofi/rofi-zeal/
-    mkdir -p ~/.cache/rofi/rofi-zeal/
     cp "${srcdir}"/rofi-zeal/rofi-zeal.sh ~/.local/share/rofi/rofi-zeal/rofi-zeal.sh
     chmod u+x ~/.local/share/rofi/rofi-zeal/rofi-zeal.sh
     ln -sf ~/.local/share/rofi/rofi-zeal/rofi-zeal.sh ~/.local/bin/rofi-zeal
@@ -44,7 +43,6 @@ Just attach the script to a keyboard shortcut.
     man term          # Search on Man
     
     s term            # Search on Stack Overflow
-    med term          # Search on Medium
     g term            # Search on Google
     d term            # Search on DuckDuckGo
 
