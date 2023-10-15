@@ -46,13 +46,13 @@ Just attach the script to a keyboard shortcut.
     g term            # Search on Google
     d term            # Search on DuckDuckGo
 
-**Troubleshooting**
+## Troubleshooting
 
 * **I'd like to change the terminal when I use man:** Define the env var `TERMINAL` with the one you like.
 * **I'd like to pass my own rofi config**: Define the env var `ROFI_CONFIG_FILE`.
 
 ## Contribute to the project
-I'm don't use rofi myself anymore but I will review and merge pull requests, so please send your PR if you would like to include a new feature.
+I don't use rofi myself anymore but I will review and merge pull requests, so please send your PR if you would like to include a new feature.
 
 ## Wanted features
 * Search history → [take care terms don't overlap](https://github.com/Zeioth/rofi-zeal/issues/3)
