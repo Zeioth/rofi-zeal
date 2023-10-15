@@ -9,7 +9,6 @@ if [ -n "$ROFI_CONFIG_FILE" ]; then
   input=$(rofi -dmenu -p "rofi-zeal" -config "$ROFI_CONFIG_FILE")
 else
   input=$(rofi -dmenu -theme-str 'entry { placeholder: ""; }' -p "rofi-zeal")
-
 fi
 
 
